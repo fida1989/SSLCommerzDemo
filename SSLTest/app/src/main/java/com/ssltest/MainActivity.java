@@ -57,15 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void doPay(Float f) {
-        /*Mandatory Field For Specific Bank Page*/
-        /*MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("","","150",
-                "1012", CurrencyType.BDT, SdkType.TESTBOX, SdkCategory.BANK_PAGE, BankName.BKASH);*/
-
 
         int rand = new Random().nextInt();
 
         /*Mandatory Field*/
-        MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("hungr5ad2e860ca56d", "hungr5ad2e860ca56d@ssl", f.toString(),
+        MandatoryFieldModel mandatoryFieldModel = new MandatoryFieldModel("", "", f.toString(),
                 "trans_" + rand, CurrencyType.BDT, SdkType.TESTBOX, SdkCategory.BANK_LIST);
 
         /*Call for the payment*/
